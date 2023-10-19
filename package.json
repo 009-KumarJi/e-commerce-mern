@@ -1,6 +1,15 @@
 {
   "name": "e-commerce-mern",
-  "version": "1.0.0",
+  "version": "2.0.0",
+  "description": "eCommerce MERN stack app built from SCRATCH",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js"
+  },
+  "author": "Krishna Kumar",
+  "license": "ISC",
   "dependencies": {
+    "express": "^4.18.2"
   }
 }
