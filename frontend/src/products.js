@@ -1,8 +1,8 @@
 const products = [
     {
-        __id: '1',
+        _id: '1',
         name: 'Airpods Pro (2nd Generation)',
-        image: './public/images/airpods.jpg',
+        image: '/images/airpods.jpg',
         description: '- Active Noise Cancellation reduces unwanted background noise\n' +
             '- Adaptive Transparency lets outside sounds in while reducing loud environmental noise\n' +
             '- Personalised Spatial Audio with dynamic head tracking places sound all around you',
@@ -14,9 +14,9 @@ const products = [
         numReviews: 12
     },
     {
-        __id: '2',
+        _id: '2',
         name: 'Airpods max',
-        image: './public/images/airpods-max.jpg',
+        image: '/images/airpods-max.jpg',
         description: '- Apple-designed dynamic driver provides high-fidelity audio\n' +
             '- Active Noise Cancellation blocks outside noise, so you can immerse yourself in music\n' +
             '- Transparency mode for hearing and interacting with the world around you\n' +
@@ -35,9 +35,9 @@ const products = [
         numReviews: 8
     },
     {
-        __id: '3',
+        _id: '3',
         name: 'Echo Dot (4th Gen, 2020 release) with clock',
-        image: './public/images/echo-dot.jpg',
+        image: '/images/echo-dot.jpg',
         description: '- Meet the all-new Echo Dot with clock - Our most popular smart speaker with Alexa. The sleek, compact design delivers crisp vocals and balanced bass for full sound.\n' +
             '- Perfect for your nightstand - See the time, alarms, and timers on the LED display. Tap the top to snooze an alarm.\n' +
             '- Control your smart home - Use your voice to turn on lights, adjust thermostats, and lock doors with compatible devices.\n' +
@@ -51,9 +51,9 @@ const products = [
         numReviews: 12
     },
     {
-        __id: '4',
+        _id: '4',
         name: 'Fujifilm X-T4 26 MP Mirrorless Camera Body',
-        image: './public/images/fujifilm-cam.jpg',
+        image: '/images/fujifilm-cam.jpg',
         description: '- Putting Stability in Your Hands: A huge part of creating great photos or videos is making sure you are in the right place at the right time – and that often means making handheld images to get to the heart of the action. X-T4’s state-of-the-art, five-axis In-Body Image Stabilization (IBIS) provides up to 6.5 stops of image stabilization to make sure that, even in the midst of all the excitement, your images remain steady and sharp. Combine this with the new four-axis Digital Image Stabilizer, and you have lots of room to maneuver.\n' +
             '- Performance You Can Rely On: For any serious image maker, having a tool that can be relied upon to perform flawlessly whenever it is required is extremely important. For this reason, X-T4 features a newly developed mechanical shutter that is the fastest and most robust in the history of the X series. Not only can it make images at 15 frames per second, but it is also rated for 300,000 actuations2. When you combine this with it’s larger capacity battery that is capable of up to 600 frames per charge2, X-T4 has the power and the durability to give you the peace of mind that you’ll never miss the perfect opportunity.\n' +
             '- Find the Best Angle for Your Story: When chasing the perfect image, versatility is key, so the last thing you want is to be hampered by awkward angles. The 1.62 million pixel vari-angle touchscreen LCD featured on X-T4 can be adjusted to make it visible from a wide range of positions. This not only gives you a high-quality monitor to frame with, but also provides quick and simple controls when you need them most. On the flip side, there are times when you need to minimize the light and distractions that a screen can create. That’s why X-T4’s LCD has been designed to easily fold away so it is completely hidden from view, leaving the updated 3.69 million pixel/100fps electronic viewfinder to help you focus on the moment at hand.\n' +
@@ -66,9 +66,9 @@ const products = [
         numReviews: 12
     },
     {
-        __id: '5',
+        _id: '5',
         name: 'Apple iPhone 15 Pro Max',
-        image: './public/images/iphone-pro-max.jpg',
+        image: '/images/iphone-pro-max.jpg',
         description: '- 6.7-inch Super Retina XDR display with ProMotion for a faster, more responsive feel\n' +
             '- Pro camera system with new 12MP Telephoto, Wide, and Ultra Wide cameras; LiDAR Scanner; 6x optical zoom range; Macro mode; Photographic Styles, ProRes video, and more\n' +
             '- A15 Bionic chip for lightning-fast performance\n' +
@@ -84,9 +84,9 @@ const products = [
         numReviews: 8
     },
     {
-        __id: '6',
+        _id: '6',
         name: 'Logitech MX Master Wireless Mouse',
-        image: './public/images/logitech-mouse.jpg',
+        image: '/images/logitech-mouse.jpg',
         description: '- Unique thumb wheel: For horizontal navigation and advanced gestures\n' +
             '- Easy connections for multiple computers: Use with up to three Windows or Mac computers via included Unifying receiver or Bluetooth Smart wireless technology\n' +
             '- Easy switching between computers with the touch of the button\n' +
@@ -101,9 +101,9 @@ const products = [
         numReviews: 12
     },
     {
-        __id: '7',
+        _id: '7',
         name: 'Sony PlayStation 5 Console',
-        image: './public/images/PS5.jpg',
+        image: '/images/PS5.jpg',
         description: '- Lightning Speed - Harness the power of a custom CPU, GPU, and SSD with Integrated I/O that rewrite the rules of what a PlayStation console can do.\n' +
             '- Stunning Games - Marvel at incredible graphics and experience new PS5 features.\n' +
             '- Breathtaking Immersion - Discover a deeper gaming experience with support for haptic feedback, adaptive triggers, and 3D Audio technology.\n' +
