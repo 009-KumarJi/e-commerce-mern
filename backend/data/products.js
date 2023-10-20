@@ -1,6 +1,5 @@
 const products = [
     {
-        _id: '1',
         name: 'Airpods Pro (2nd Generation)',
         image: '/images/airpods.jpg',
         description: '- Active Noise Cancellation reduces unwanted background noise\n' +
@@ -14,7 +13,6 @@ const products = [
         numReviews: 12
     },
     {
-        _id: '2',
         name: 'Airpods max',
         image: '/images/airpods-max.jpg',
         description: '- Apple-designed dynamic driver provides high-fidelity audio\n' +
@@ -35,7 +33,6 @@ const products = [
         numReviews: 8
     },
     {
-        _id: '3',
         name: 'Echo Dot (4th Gen, 2020 release) with clock',
         image: '/images/echo-dot.jpg',
         description: '- Meet the all-new Echo Dot with clock - Our most popular smart speaker with Alexa. The sleek, compact design delivers crisp vocals and balanced bass for full sound.\n' +
@@ -51,7 +48,6 @@ const products = [
         numReviews: 12
     },
     {
-        _id: '4',
         name: 'Fujifilm X-T4 26 MP Mirrorless Camera Body',
         image: '/images/fujifilm-cam.jpg',
         description: '- Putting Stability in Your Hands: A huge part of creating great photos or videos is making sure you are in the right place at the right time – and that often means making handheld images to get to the heart of the action. X-T4’s state-of-the-art, five-axis In-Body Image Stabilization (IBIS) provides up to 6.5 stops of image stabilization to make sure that, even in the midst of all the excitement, your images remain steady and sharp. Combine this with the new four-axis Digital Image Stabilizer, and you have lots of room to maneuver.\n' +
@@ -66,7 +62,6 @@ const products = [
         numReviews: 12
     },
     {
-        _id: '5',
         name: 'Apple iPhone 15 Pro Max',
         image: '/images/iphone-pro-max.jpg',
         description: '- 6.7-inch Super Retina XDR display with ProMotion for a faster, more responsive feel\n' +
@@ -84,7 +79,6 @@ const products = [
         numReviews: 8
     },
     {
-        _id: '6',
         name: 'Logitech MX Master Wireless Mouse',
         image: '/images/logitech-mouse.jpg',
         description: '- Unique thumb wheel: For horizontal navigation and advanced gestures\n' +
@@ -101,7 +95,6 @@ const products = [
         numReviews: 12
     },
     {
-        _id: '7',
         name: 'Sony PlayStation 5 Console',
         image: '/images/PS5.jpg',
         description: '- Lightning Speed - Harness the power of a custom CPU, GPU, and SSD with Integrated I/O that rewrite the rules of what a PlayStation console can do.\n' +
@@ -114,6 +107,22 @@ const products = [
         countInStock: 7,
         rating: 4.0,
         numReviews: 8
+    },
+    {
+        name: 'Samsung Galaxy S21 Ultra 5G',
+        image: '/images/samsung-galaxy.jpg',
+        description: '- 6.8-inch Dynamic AMOLED 2X display with 120Hz refresh rate\n' +
+            '- 108MP+12MP+10MP+10MP rear camera setup-100X Space Zoom, 8K Video Recording, Space Zoom, Dual OIS, Night Mode, Pro Mode, 33MP front camera\n' +
+            '- 12GB RAM | 256GB internal Storage | Dual SIM (nano+nano) dual-standby (5G+5G)\n' +
+            '- Android v14.0 operating system with 2.9GHz Exynos 2100 octa core processor\n' +
+            '- 5000mAH lithium-ion battery, 1 year manufacturer warranty for device and 6 months manufacturer warranty for in-box accessories including batteries from the date of purchase\n' +
+            '- Box also includes: Non-removable battery included, earphones, travel adapter, USB cable and user manual',
+        brand: 'Samsung',
+        category: 'Electronics',
+        price: 105999,
+        countInStock: 5,
+        rating: 3.5,
+        numReviews: 12
     }
 ]
 
