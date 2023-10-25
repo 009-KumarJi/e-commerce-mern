@@ -13,48 +13,48 @@ dotenv.config();
 connectDB(process.env.MONGO_URI);
 
 const importData = async () => {
-    try {
-        // Clear the database
-        await Order.deleteMany();
-        await Product.deleteMany();
-        await User.deleteMany();
+  try {
+    // Clear the database
+    await Order.deleteMany();
+    await Product.deleteMany();
+    await User.deleteMany();
 
-        // Insert the users
-        const createdUsers = await User.insertMany(users);
-        const adminUser = createdUsers[0]._id;
+    // Insert the users
+    const createdUsers = await User.insertMany(users);
+    const adminUser = createdUsers[0]._id;
 
-        // Insert the products
-        const sampleProducts = products.map(product => {
-            return { ...product, user: adminUser }
-        });
-        await Product.insertMany(sampleProducts);
+    // Insert the products
+    const sampleProducts = products.map(product => {
+      return {...product, user: adminUser}
+    });
+    await Product.insertMany(sampleProducts);
 
-        console.log('Data Imported!'.green.inverse);
-        process.exit();
-    } catch (error) {
-        console.error(`${error}`.red.inverse);
-        process.exit(1);
-    }
+    console.log('Data Imported!'.green.inverse);
+    process.exit();
+  } catch (error) {
+    console.error(`${error}`.red.inverse);
+    process.exit(1);
+  }
 }
 
 const destroyData = async () => {
-    try {
-        // Clear the database
-        await Order.deleteMany();
-        await Product.deleteMany();
-        await User.deleteMany();
+  try {
+    // Clear the database
+    await Order.deleteMany();
+    await Product.deleteMany();
+    await User.deleteMany();
 
-        console.log('Data Destroyed!'.red.inverse);
-        process.exit();
-    } catch (error) {
-        console.error(`${error}`.red.inverse);
-        process.exit(1);
-    }
+    console.log('Data Destroyed!'.red.inverse);
+    process.exit();
+  } catch (error) {
+    console.error(`${error}`.red.inverse);
+    process.exit(1);
+  }
 }
 
 // If the first argument is '-d', then destroy the data
 if (process.argv[2] === '-d') {
-    destroyData();
+  destroyData();
 } else {
-    importData();
+  importData();
 }
