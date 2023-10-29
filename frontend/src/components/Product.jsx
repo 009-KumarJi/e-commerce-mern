@@ -18,7 +18,7 @@ const Product = ({product}) => {
           <Ratings value={product.rating} text={`${product.numReviews} reviews`}/>
         </Card.Text>
         <Card.Text as="h3">
-          ₹{product.price}
+          ₹{product.price.toLocaleString('en-IN')}
         </Card.Text>
       </Card.Body>
     </Card>
