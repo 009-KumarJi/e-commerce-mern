@@ -3,9 +3,6 @@ import {updateCart} from "../utils/cartUtils";
 
 const initialState = localStorage.getItem("cart") ? JSON.parse(localStorage.getItem("cart")) : {cartItems: []};
 
-const addDecimals = (num) => {
-  return (Math.round(num * 100) / 100).toFixed(2);
-}
 
 const cartSlice = createSlice({
   name: "cart",
@@ -25,7 +22,7 @@ const cartSlice = createSlice({
       return updateCart(state);
     },
     removeFromCart: (state, action) => {
-      state.cartItems = state.cartItems.filter((x) => x._id != action.payload);
+      state.cartItems = state.cartItems.filter((x) => x._id !== action.payload);
       return updateCart(state);
     }
   },
